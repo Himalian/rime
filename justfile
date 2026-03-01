@@ -17,3 +17,6 @@ rebuild: fix
 fix:
     @echo "replace '  ' with <tab>..."
     @let buildTime = timeit { sd "  " "\t" cn_dicts/*.yaml }; print $"done, took ($buildTime)"
+
+download-model:
+	curl -L -o wanxiang-lts-zh-hans.gram https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram
