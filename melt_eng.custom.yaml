@@ -1,0 +1,6 @@
+# melt_eng.custom.yaml
+# encoding: utf-8
+
+patch:
+  # Mimic rime_ice.custom.yaml, patching the default dictionary to melt_eng_ext
+  "translator/dictionary": melt_eng_ext

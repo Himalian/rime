@@ -1,0 +1,17 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# Mimicking rime_ice_ext.dict.yaml, mounting extended dictionaries for English input.
+#
+
+---
+name: melt_eng_ext
+version: "2026-07-12"
+import_tables:
+  - en_dicts/en_ext # Supplementary dictionary (must be placed above 'en' since it has some weighted entries overlapping with 'en')
+  - en_dicts/en     # Primary English dictionary
+
+  # It is recommended to place extended dictionaries below so that weights of the uppermost entries take precedence when duplicate terms exist.
+  # - en_dicts/extras   # Mount extras.dict.yaml inside the en_dicts directory
+  # - mydict1           # Mount mydict1.dict.yaml inside the configuration directory
+...
