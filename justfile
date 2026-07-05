@@ -9,7 +9,7 @@ default:
 clean:
     rm -rf ./build
 
-deploy:
+deploy: fix
     @nu ./scripts/build.nu
 
 rebuild: fix
